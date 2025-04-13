@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=s, initial-scale=1.0">
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <title>Tabs</title>
+</head>
+<body>
+  <!-- tabs -->
+  <div class="container my-5">
+    <nav>
+      <div class="nav nav-tabs" id="navTab" role="tablist">
+        <button class="nav-link active" id="navHomeTab" data-bs-toggle="tab" data-bs-target="#nav-home" 
+        type="button" role="tab" aria-controls="nav-home" aria-selected="true">Home</button>
+
+        <button class="nav-link" id="navProfileTab" data-bs-toggle="tab" data-bs-target="#nav-profile" 
+        type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Profile</button>
+
+        <button class="nav-link" id="navContactTab" data-bs-toggle="tab" data-bs-target="#nav-contact" 
+        type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button> 
+      </div>
+    </nav>
+
+    <div class="tab-content" id="nav-tabContent">
+      <div class="tab-pane fade show active p-3" id="nav-home" role="tabpanel" aria-labelledby="navHomeTab">
+        <h2>Home</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore aliquid, voluptatem facere magnam consequatur reiciendis repellendus libero dignissimos, tempore laudantium neque adipisci modi earum eum debitis aspernatur ad mollitia deserunt, consectetur nihil?</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore aliquid, voluptatem facere magnam consequatur reiciendis repellendus libero dignissimos, tempore laudantium neque adipisci modi earum eum debitis aspernatur ad mollitia deserunt, consectetur nihil?</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore aliquid, voluptatem facere magnam consequatur reiciendis repellendus libero dignissimos, tempore laudantium neque adipisci modi earum eum debitis aspernatur ad mollitia deserunt, consectetur nihil?</p>
+      </div>
+
+      <div class="tab-pane fade p-3" id="nav-profile" role="tabpanel" aria-labelledby="navProfileTab">
+        <h2>Profile</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore aliquid, voluptatem facere magnam consequatur reiciendis repellendus libero dignissimos, tempore laudantium neque adipisci modi earum eum debitis aspernatur ad mollitia deserunt, consectetur nihil?</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore aliquid, voluptatem facere magnam consequatur reiciendis repellendus libero dignissimos, tempore laudantium neque adipisci modi earum eum debitis aspernatur ad mollitia deserunt, consectetur nihil?</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore aliquid, voluptatem facere magnam consequatur reiciendis repellendus libero dignissimos, tempore laudantium neque adipisci modi earum eum debitis aspernatur ad mollitia deserunt, consectetur nihil?</p>
+      </div>
+
+      <div class="tab-pane fade p-3" id="nav-contact" role="tabpanel" aria-labelledby="navContactTab">
+        <h2>Contact</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore aliquid, voluptatem facere magnam consequatur reiciendis repellendus libero dignissimos, tempore laudantium neque adipisci modi earum eum debitis aspernatur ad mollitia deserunt, consectetur nihil?</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore aliquid, voluptatem facere magnam consequatur reiciendis repellendus libero dignissimos, tempore laudantium neque adipisci modi earum eum debitis aspernatur ad mollitia deserunt, consectetur nihil?</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore aliquid, voluptatem facere magnam consequatur reiciendis repellendus libero dignissimos, tempore laudantium neque adipisci modi earum eum debitis aspernatur ad mollitia deserunt, consectetur nihil?</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
