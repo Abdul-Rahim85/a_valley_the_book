@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   
   <title>Bootstrap</title>
-  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./sass/main.css">
   <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
   <style>
     section {
@@ -65,6 +65,8 @@
           </h1>
           <p class="lead my-4 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           <a href="#pricing" class="btn btn-secondary btn-lg">Buy Now</a>
+          <!-- open sidebar / offcanvas -->
+          <a href="#sidebar" class="d-block mt-3" data-bs-toggle="offcanvas" role="button" aria-controls="sidebar">Exploer my other books</a>
         </div>
 
         <div class="col-md-5 text-center text-md-center d-none d-md-block">
@@ -238,11 +240,11 @@
   </section>
 
   <!-- reviews list -->
-  <section class="bg-light" id="reviews">
+  <section class="bg-altlight" id="reviews">
     <div class="container-lg">
       <!-- Section title -->
       <div class="text-center">
-        <h2><i class="bi bi-stars"></i>Book Reviews</h2>
+        <h2><i class="bi bi-stars text-altdark"></i>Book Reviews</h2>
         <p class="lead">A must buy for every aspiring web dev</p>
       </div>
 
@@ -415,6 +417,31 @@
         <div class="modal-footer">
           <button class="btn btn-primary">Submit</button>
         </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Offcanvas -->
+  <div class="offcanvas offcanvas-start" tapindex="-1" id="sidebar" aria-labelledby="sidebar-label">
+    <!-- offcanvas title -->
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="sidebar-label">My other book</h5>
+      <button class="btn-close" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+
+    <!-- offcanvas title -->
+    <div class="offcanvas-body">
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi nostrum rerum quae neque voluptatibus, suscipit sapiente qui, tempora pariatur laboriosam culpa, laudantium ducimus numquam quos vel? A ut laborum in explicabo incidunt, maxime alias unde quos deleniti, vitae dolore temporibus! Cumque, fugit fugiat! Unde eum earum nemo error voluptatum incidunt.</p>
+      <div class="dropdown mt-3">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="book-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="bi bi-book"></i>
+          Choose a book
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="book-dropdown">
+          <li><a class="dropdown-item" href="#">Become a React Superhero</a></li>
+          <li><a class="dropdown-item" href="#">Conquering Vue.js</a></li>
+          <li><a class="dropdown-item" href="#">Leveling up your Next.js</a></li>
+        </ul>
       </div>
     </div>
   </div>
